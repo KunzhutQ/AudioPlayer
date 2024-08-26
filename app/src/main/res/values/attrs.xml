@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="ViewGroupChildHorizontallyCentered">
+
+        <attr name="draw_text" format="string"/>
+
+    </declare-styleable>
+   <declare-styleable name="ImageViewTextPosImpl">
+
+       <attr name="text" format="string"/>
+       <attr name="source_reference" format="reference"/>
+       <attr name="source_width" format="dimension"/>
+       <attr name="source_height" format="dimension"/>
+   </declare-styleable>
+
+    <declare-styleable name="FileManagerLayout">
+        <attr name="title_text" format="string"/>
+    </declare-styleable>
+</resources>

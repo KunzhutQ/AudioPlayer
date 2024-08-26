@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/dark_gray"
+    android:id="@+id/main_layout">
+
+    <RelativeLayout
+        android:layout_width="350dp"
+        android:layout_height="532dp"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true">
+
+        <ImageView
+            android:id="@+id/play_button"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="100dp"
+            android:src="@drawable/playbutton" />
+
+        <com.kunzhut.audioplayer.ImageViewTextPosImpl
+            android:id="@+id/left_arrow"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="105dp"
+            android:layout_toStartOf="@id/play_button"
+            app:source_height="60dp"
+            app:source_reference="@drawable/leftarrow"
+            app:source_width="60dp" />
+
+        <com.kunzhut.audioplayer.ImageViewTextPosImpl
+            android:id="@+id/right_arrow"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="20dp"
+            android:layout_marginBottom="105dp"
+            android:layout_toEndOf="@id/play_button"
+            app:source_height="60dp"
+            app:source_reference="@drawable/rightarrow"
+            app:source_width="60dp"
+
+            />
+
+        <ImageView
+            android:id="@+id/reset_button"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="25dp"
+            android:src="@drawable/resetbutton" />
+
+        <com.kunzhut.audioplayer.ViewGroupChildHorizontallyCentered
+            android:id="@+id/current_track_or_select_folder_element"
+            android:layout_width="350dp"
+            android:layout_height="180dp"
+            android:layout_marginBottom="20dp"
+            app:draw_text="Выберите папку по умолчанию">
+
+            <ImageView
+                android:id="@+id/select_folder_clickable_icon"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:background="@drawable/selectfolderelement"
+                android:scaleType="fitXY" />
+
+        </com.kunzhut.audioplayer.ViewGroupChildHorizontallyCentered>
+
+        <com.kunzhut.audioplayer.ImageViewTextPosImpl
+            android:id="@+id/ten_seconds_back"
+            android:layout_width="70dp"
+            android:layout_height="60dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="25dp"
+            android:layout_toStartOf="@id/reset_button"
+            app:source_height="40dp"
+            app:source_reference="@drawable/arrowgoback"
+            app:source_width="40dp"
+            app:text=" -10" />
+
+        <com.kunzhut.audioplayer.ImageViewTextPosImpl
+            android:id="@+id/ten_seconds_forward"
+            android:layout_width="70dp"
+            android:layout_height="60dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="25dp"
+            android:layout_toEndOf="@id/reset_button"
+            app:source_height="40dp"
+            app:source_reference="@drawable/arrowgoforward"
+            app:source_width="40dp"
+            app:text=" +10"
+
+            />
+    </RelativeLayout>
+</RelativeLayout>

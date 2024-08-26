@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.kunzhut.audioplayer.FileManagerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/dark_gray"
+    android:id="@+id/file_manager_layout">
+
+
+<HorizontalScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/path">
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:textSize="20sp"
+        android:fontFamily="@font/bloggersans"
+        android:textColor="@color/white_chiffon"
+        android:gravity="center_vertical"
+        android:scrollbars="horizontal"
+        android:maxLines="1"
+        android:clickable="true"
+        />
+
+</HorizontalScrollView>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/select_folder_list"
+        android:layout_below="@id/path"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical"
+        />
+
+    <Button
+        android:id="@+id/confirm_folder_path"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_background"
+        android:textSize="22sp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="10dp"
+        android:fontFamily="@font/bloggersans"
+        android:includeFontPadding="false"
+        android:textAllCaps="false"
+        android:text="Выбрать"
+        />
+
+
+</com.kunzhut.audioplayer.FileManagerLayout>

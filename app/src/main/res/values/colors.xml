@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="purple">#430B98</color>
+    <color name="gold">#B88011</color>
+    <color name="crimson">#8D0101</color>
+    <color name="dark_gray">#0D0D0D</color>
+    <color name="transparent">#00000000</color>
+    <color name="white_chiffon">#FBFAF2</color>
+    <color name="white_transparent">#20FBFAF2</color>
+    
+</resources>
